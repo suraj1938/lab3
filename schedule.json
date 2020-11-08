@@ -1,0 +1,35 @@
+{
+  "schedule": [
+    {
+      "schedule_name": "Schedule3",
+      "courses_list": [
+        {
+            "catalog_nbr": "5203B",
+            "subject": "THEOETH"
+        }
+      ]
+    },
+    {
+      "schedule_name": "Schedule383",
+      "courses_list": [
+        {
+          "catalog_nbr": "2980C",
+          "subject": "ACTURSCI"
+        }
+      ]
+    },
+    {
+      "schedule_name": "Schedule433",
+      "courses_list": [
+        {
+          "catalog_nbr": "2053",
+          "subject": "ACTURSCI"
+        },
+        {
+          "catalog_nbr": "1024G",
+          "subject": "WOMENST"
+        }
+      ]
+    }
+  ]
+}

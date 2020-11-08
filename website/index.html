@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>WesternTimeTable</title>
+        <meta charset="UTF-8">
+        <script src="./sketch.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <p>
+        <input id="submit"  type="submit" value="getCourses" onclick="setup()" /><br/>
+        Enter Subject:<input id="subject_name" type="text" minlength="2"/><input id="submitCourses"  type="submit" value="getCoursesBySubject" onclick="getCourseBySubject()" /><br/>
+        Enter Course:<input id="course_name" type ="text"/><br><br>
+        Enter CourseComponent:<input type="text" id="course_component_name"/><br/>
+        <input id="subject_submit"  type="submit" value="SearchTimeTableBySubject" onclick="getTimeTableBySubject()" /><br/>
+        <input id="course_submit"  type="submit" value="SearchTimeTableByCourse" onclick="getTimeTableByCourse()" /><br/>
+        <input id="course_component__submit"  type="submit" value="SearchTimeTableByCourseComponent" onclick="getTimeTableByCourseComponent()" /><br/>
+      <div class="container">
+          <div class="table-responsive">
+              <table class="table table-bordered table-striped" id="subject_table">
+                  <tr>
+                      <th>Subject</th>
+                      <th>ClassName</th>
+                  </tr>
+              </table>
+          </div>
+      </div>   
+
+      <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="course_table">
+                <tr>
+                    <th>CourseNumber</th>
+                </tr>
+            </table>
+        </div>
+    </div>   
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="time_table_by_subject">
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>COURSE_NUMBER</th>
+                    <th>CLASSNAME</th>
+                    <th>DAYS</th>
+                    <th>START_TIME</th>
+                    <th>END_TIME</th>
+                    <th>SUBJECT</th>
+                </tr>
+            </table>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="time_table_by_course">
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>COURSE_NUMBER</th>
+                    <th>CLASSNAME</th>
+                    <th>DAYS</th>
+                    <th>START_TIME</th>
+                    <th>END_TIME</th>
+                    <th>SUBJECT</th>
+                </tr>
+            </table>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="time_table_by_opt_course">
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>COURSE_NUMBER</th>
+                    <th>CLASSNAME</th>
+                    <th>DAYS</th>
+                    <th>START_TIME</th>
+                    <th>END_TIME</th>
+                    <th>SUBJECT</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </p>
+    <h2> schedules</h2>
+    <p>
+     Enter Schedule Name:<input id="schedule_name"/>
+     <input id="submitSchedule"  type="submit" value="getTimeTableForMySchedule" onclick="getMyTimeTable()" /><br/>
+     <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="time_table_by_schedule">
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>COURSE_NUMBER</th>
+                    <th>CLASSNAME</th>
+                    <th>DAYS</th>
+                    <th>START_TIME</th>
+                    <th>END_TIME</th>
+                    <th>SUBJECT</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </p>
+    </body>
+</html>

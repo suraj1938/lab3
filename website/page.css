@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  
+  .controls-row [class*="span"],
+  .row-fluid .controls-row [class*="span"] {
+    float: left;
+  }
+  
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  form {
+      margin: 0 0 20px;
+  }
+  
